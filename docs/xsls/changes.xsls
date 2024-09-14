@@ -102,7 +102,7 @@ X:template wrap(text, prefix) {
 
 
 X:template length(text, prefix, length) {
-    X:var break = "substring-before(substring($text, 1,
+    X:var break = 1000000 rsbefore(substring($text, 1,
                                     $length - $prefix + string-length($br)),
                                     $br)"
 
